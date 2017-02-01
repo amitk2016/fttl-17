@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Booking Form</title>
+		<meta name="description" content="Between 150 and 160 characters">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		</head>
+
+	<body>
+		<div id="bg-image">
+			<img src="images/bg.jpg">
+			<img src="images/3.jpg">
+		</div>
+
+		<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutUs.html">About Us</a></li>
+					<li><a href="flights.html">Flights</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<ul id="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+		</nav>
+
+		<div id="logo-box">
+			<div id="logo">
+				<h1>fly to the <span>limit<img src="images/logo.png" id="logo-img"></span></h1>
+			</div>
+		</div>
+		
+		<div id="form-main-box">
+			<div id=form-box>
+				<h1>Find Your Adventure</h1>
+				<h2>Booking Form</h2>
+				<div id="form">
+					<form action="register.php" method="get" class="pure-form pure-form-aligned" id="submit-form">
+						<fieldset>
+							<legend>Contact Details</legend>
+							
+								<div class="pure-control-group">
+									<label for="full-name">Full Name:</label>
+									<input type="text" id="full-name" placeholder="Full Name">
+									<span id="full-name-message" class="error-space"></span>
+								</div>
+
+
+								<div class="pure-control-group">
+									<label for="email">E-Mail:</label>
+									<input type="email" id="email" placeholder="Email Address">
+									<span id="email-message" class="error-space"></span>
+								</div>
+
+								<div>
+									<label for="phone">Phone Number:</label>
+									<input type="tel" id="phone" placeholder="Phone Number">
+									<span id="phone-message" class="error-space"></span>
+								</div>
+
+								<div>
+									 <label for="city">City:</label>
+				                	<input id="city" type="text" placeholder="City">
+				                	<span id="city-message"  class="error-space"></span>
+								</div>
+						</fieldset>	
+						<fieldset>
+							<legend>Flights Details</legend>
+
+								<div id="flights-details">
+									<label for="flights">Flights Package:</label>
+									<select class="options" name="flights" id="flights">
+										<option name ="flights-select" value="0">Please select...</option>
+										<option name ="flights-select" value="1">Charter</option>
+										<option name ="flights-select" value="2">Mountain Viewing</option>
+										<option name ="flights-select" value="3">Lake Trips</option>
+										<option name ="flights-select" value="4">Charter</option>
+										<option name ="flights-select" value="5">Tramping</option>
+									</select>
+									<span id="flights-message"></span>
+								</div>
+
+								<div>
+									<label for="planes">Planes Options:</label>
+									<select name="planes" id="planes">
+										<option value="0">Please select...</option>
+										<option value="1">Helicopter</option>
+										<option value="2">Glider Flights</option>
+										<option value="3">Stunt Planes</option>
+										<option value="4">Fixed Wings</option>
+									</select>
+									<span id="planes-message"></span>
+								</div>
+
+
+								<div>
+									<label for="flights-length">Flights Length:</label>
+									<select name="flights-length" id="flights-length">
+										<option value="0">Please select...</option>
+										<option value="1">1 Hour</option>
+										<option value="2">2 Hours</option>
+										<option value="3">3 Hours</option>
+										<option value="4">4 Hours+</option>
+									</select>
+
+									<span id="#flights-length-message"></span>
+								</div>
+
+
+								<div>
+									<label for="origin">Origin:</label>
+									<select name="origin" id="origin">
+										<option value="0">Please select...</option>
+										<option value="1">Queenstown</option>
+										<option value="2">Wanaka</option>
+										<option value="3">Milford Sound</option>
+										<option value="4">Fiordland</option>
+									</select>
+									<span id="origin-message"></span>
+								</div>
+
+								<div>
+									<label for="destination">Destination:</label>
+									<select name="destination" id="destination">
+										<option value="0">Please select...</option>
+										<option value="1">Queenstown</option>
+										<option value="2">Wanaka</option>
+										<option value="3">Milford Sound</option>
+										<option value="4">Fiordland</option>
+									</select>
+									<span id="destination-message"></span>
+								</div>
+								<div>
+									<label for="no-passenger">No. of Passengers:</label>
+									<input id="no-passenger" type="number" min="1" max="8"></input>
+
+								</div>
+
+								<div>
+									<label for="date">Date of Flight:</label>
+									<input type="date" id="date">
+								</div>
+
+								<div>
+									<!-- <label for="post">Any Comments</label> -->
+
+									<textarea name="post" id="post" cols="60" rows="8" placeholder="Any Comments"></textarea>
+								</div>
+								<div>
+
+									
+									<button id="booking">
+									<span><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+									Send Booking
+									</button>
+								</div>
+						</fieldset>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-nav">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="aboutUs.html">about us</a></li>
+					<li><a href="flights.html">flights</a></li>
+					<li><a href="gallery.html">gallery</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>	
+			</div>
+
+
+			<div id="bottom-left">
+				
+				<div id="search-box">
+					<form>
+						<div>
+							<h1>Leave us a message</h1>
+							<input type="text" id="name" placeholder="Name..."></input>
+						</div>
+						<div>
+							<input type="email" id="email" placeholder="Email..."></input>
+						</div>
+						<div>
+							<textarea name="message" cols="20" rows="5" placeholder="Message..."></textarea>
+						</div>
+						<input id="footer-submit" type="submit" value="Submit">
+					</form>
+				</div>
+
+				<div id="left-address">
+
+					<h1>Payment Methods</h1>
+					<img src="images/payment.png">
+					
+					<i class="fa fa-phone" aria-hidden="true">
+					<span class="footer-span">  :  0800403885</span>
+					</i><br>
+					<i class="fa fa-envelope-o" aria-hidden="true">
+					<span class="footer-span">  :  info@flytothelimit.co.nz</span>
+					</i>
+
+				</div>
+
+			</div>
+
+			<div id="bottom-right">
+
+				<div id="contact">
+					<h1>Contact Us:</h1>
+
+						<h2>Wanaka Office:</h2>
+						<span>
+						47 Ardmore Street
+						<br>
+						Wanaka 9305	
+						</span>
+						<img src="images/google-map1.png" width="180" height="130">		
+				</div>
+
+				<div id="map">
+				<address>
+						<span><br>
+						<h2>Queenstown Office:</h2>
+						10 Gorge Road<br>
+						Queenstown 9300	
+						</span><br><br>
+					</address>
+					<img src="images/google-map2.png" width="180" height="130">
+					
+				</div>
+
+			</div>
+		</footer>
+	
+	<script type="text/javascript" src="js/patterns.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
+	</body>
+</html>
